@@ -1,0 +1,6 @@
+@app.route('/signup', methods=['GET', 'POST'])
+def signup():
+    if request.method == 'POST':
+        # Process form data here
+        return 'Signup successful!'
+    return render_template('signup.html')
